@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <div class="container">
+        <h1>zuvido</h1>
+        
+        <div class="numeros">
+            <label for="numero1">Oreia</label>
+            <input type="number" id="numero1" placeholder="Coloca o número aí pai">
+        </div>
+        
+        <div class="numeros">
+            <label for="numero2">Tímpano:</label>
+            <input type="number" id="numero2" placeholder="Bota aí antes q eu me estresse">
+        </div>
+        
+        <div class="botoes">
+            <button onclick="Operacao(&#39;+&#39;)">+</button>
+            <button onclick="Operacao(&#39;-&#39;)">-</button>
+            <button onclick="Operacao(&#39;*&#39;)">×</button>
+            <button onclick="Operacao(&#39;/&#39;)">÷</button>
+        </div>
+        
+        <div id="resultado" class="resultado" style="display: none;">
+            <span id="valorResultado"></span>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
