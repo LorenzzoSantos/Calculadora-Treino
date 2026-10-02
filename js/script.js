@@ -31,7 +31,7 @@ function Operacao(operador) {
     const resultadoDiv = document.getElementById('resultado');
     const valorResultado = document.getElementById('valorResultado');
     
-    // Verificar si es un error
+    // Verificar se tem um erro
     if (typeof resultado === 'string' && resultado.includes('Error')) {
         resultadoDiv.classList.add('error');
         valorResultado.textContent = resultado;
@@ -43,7 +43,7 @@ function Operacao(operador) {
     resultadoDiv.style.display = 'block';
 }
 
-// Permitir calcular con Enter
+// Permitir calcular com Enter
 document.getElementById('numero2').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         Operacao();
